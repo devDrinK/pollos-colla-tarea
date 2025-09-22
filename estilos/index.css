@@ -1,0 +1,477 @@
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+}
+/* hero seccion */
+#hero {
+    position: relative;
+    height: 90vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border-top-left-radius: 80px;
+    border-top-right-radius: 80px;
+    border-bottom-left-radius: 80px;
+    border-bottom-right-radius: 80px; */
+    background: linear-gradient(rgba(0, 0, 0, 0.404)), url('/recursos/fondopollos.jpg');
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+#hero h1 {
+    z-index: 2;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#hero h1 img {
+    height: 25rem;
+}
+/* eslogan */
+#eslogan {
+    position: relative;
+    margin-top: -80px;
+    padding: 0 20px;
+    min-height: 5rem;
+    width: 88vw;
+    text-align: center;
+    background-color: transparent;
+    z-index: 10;
+}
+
+#eslogan p {
+    font-family: "Cookie", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 4rem;
+    font-weight: bold;
+    color: #faf4ff;
+    z-index: 12;
+    position: relative;
+    /* backdrop-filter: blur(10px) saturate(180%); */
+    background-color: rgba(255, 71, 46, 0.7);
+    padding: 4rem 2.5rem;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* historia seccion */
+#historia {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #f5f3f3;
+    background:linear-gradient(rgba(0, 0, 0, 0.479)), url('/recursos/exterior.jpg');
+    background-size: cover;
+    background-position: bottom right;
+    border-top-left-radius: 80px;
+    border-top-right-radius: 80px;
+    border-bottom-left-radius: 80px;
+    border-bottom-right-radius: 80px;
+    overflow: hidden;
+    height: 90vh;
+    width: 88%;
+}
+#historia h2 {
+    font-family: "Cookie", cursive;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 4rem;
+    margin: 10px 0;
+}
+#historia p {
+    width: 80%;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 4em;
+    border-radius: 10px;
+    max-width: 800px;
+    z-index: 2;
+    position: relative;
+    margin-top: 20px;
+    line-height: 1.6;
+}
+
+/* main------menu comidas y pedidos */
+main {
+    backdrop-filter: blur(5px) saturate(180%);
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 40px 40px 0 0;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 2rem;
+    margin-top: -30px;
+    position: relative;
+    z-index: 10;
+}
+
+/* menu de comidas */
+/* #menu {
+    background: url(/recursos/menufondo/1758509783663.jpg);
+    background-color: #022d5898;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 40px auto;
+    width: 50vw;
+    max-width: 800px;
+    color: white;
+    padding-top: 12rem;
+} */
+
+#menu {
+    position: relative;
+    background: url(/recursos/menufondo/1758509783663.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 40px auto;
+    width: 50vw;
+    max-width: 800px;
+    color: white;
+    padding-top: 12rem;
+}
+
+/* Agregar una capa de color encima de la imagen */
+#menu::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(2, 45, 88, 0.2);
+    border-radius: 15px;
+    z-index: 1;
+}
+
+/* Asegurar que el contenido esté por encima del pseudo-elemento */
+#menu > * {
+    position: relative;
+    z-index: 2;
+}
+/*    ------------------------------------      */
+/* #menu h2 {
+    font-family: "Zen Tokyo Zoo", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    color: rgb(255, 197, 90);
+    font-size: 4rem;
+    margin: 50px -40px;
+    text-shadow: 
+        1px 1px 0 #000, 
+        2px 2px 0 #000, 
+        3px 3px 0 #000, 
+        4px 4px 0 #000, 
+        5px 5px 0 #000, 
+        6px 6px 0 #000, 
+        8px 8px 0 #000000a9, 
+        10px 10px 0 #0000005d, 
+        12px 12px 0 #00000049, 
+        15px 15px 0 #00000042;
+} */
+
+/* #menu article {
+    background-color: rgba(255, 247, 250, 0.692);
+    color: #333;
+    padding: 50px 30px;
+    border-radius: 10px;
+    margin: 50px -40px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+    transition: transform 0.4s cubic-bezier(0.25, 0.8, 0.25, 1), box-shadow 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+} */
+
+#menu article h3 {
+    cursor: pointer;
+    color: #001f3f;
+    font-size: 1.8em;
+}
+#menu article ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0 0;
+    display: none;
+    flex-direction: column;
+    gap: 25px; /* Aumenta el espacio entre los platos */
+}
+
+#menu article ul li {
+    display: flex;
+    align-items: flex-end;
+    gap: 20px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid gold;
+}
+
+#menu article ul li:last-child {
+    border-bottom: none;
+}
+
+#menu article ul li img {
+    width: 11rem;
+    height: 10rem;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Contenedor del texto (h4 y p) */
+#menu article ul li .text-container {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Título del plato */
+#menu article ul li h4 {
+    margin: 0;
+    font-size: 1.4em;
+    color: #141d02;
+}
+
+/* Descripción del plato */
+#menu article ul li p {
+    margin: 5px 0 0;
+    font-size: 1em;
+    color: #000000;
+}
+
+/* Opcional: Estilo para la lista desplegada (activada con JS) */
+#menu article ul.active {
+    display: flex;
+}
+
+#menu article {
+    background-color: rgba(255, 247, 250, 0.692);
+    color: #333;
+    cursor: pointer;
+    padding: 50px 30px;
+    border-radius: 10px;
+    margin: 50px -40px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+    transition: transform 0.4s cubic-bezier(0.25, 0.8, 0.25, 1), box-shadow 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#menu article:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+}
+
+/* Estilos para el contenedor del icono */
+.iconContainer {
+    position: absolute;
+    top: -40px;
+    
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top;
+    /* background-blend-mode: multiply; */
+    border-radius: 10px 0 10px 0;
+    border: gold solid 2px;
+    box-shadow: -10px -8px 20px rgba(0, 0, 0, 0.4);
+    transition: transform 0.4s ease, box-shadow 0.5s ease;
+}
+
+#menu article .icon-container:hover {
+    transform: translateY(8px) scale(1.02);
+    box-shadow: -15px -15px 40px rgba(0, 0, 0, 0.5);
+}
+
+/* Estilos específicos para cada icono */
+#sopas-icon {
+    background-image: url('/recursos/sopaicon-removebg-preview.png');
+    width: 22em;
+    height: 16em;
+}
+
+#segundos-icon {
+    background-image: url('/recursos/chickenicon-removebg-preview-1.png');
+    width: 22em;
+    height: 15em;
+}
+
+#postres-icon {
+    background-image: url('/recursos/postreicon-removebg-preview.png');
+    width: 22em;
+    height: 16em;
+}
+
+/* Estilos para el texto <h3> */
+#menu article h3 {
+    color: rgb(2, 0, 3);
+    font-family: "Cookie", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 7em;
+    margin-top: 50px;
+    margin-bottom: 0;
+    border-radius: 10px;
+    text-align: center;
+    background-image: none;
+    background-size: initial;
+    background-position: initial;
+    background-blend-mode: initial;
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    transition: none;
+    z-index: 4;
+}
+
+/* ----sub secciones menu h3 */
+/* #menu article h3 {
+    cursor: pointer;
+    color: rgb(26, 19, 37);
+    font-size: 2em;
+    padding: 100px;
+    background-size: 9em;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-blend-mode: multiply;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 10px 0 10px 0;
+    border: gold solid 2px;
+    margin: -3em 0 20px -1em;
+    box-shadow: -8px -8px 20px rgba(0, 0, 0, 0.3);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    display: inline-block;
+    position: relative;
+} */
+@media (max-width: 768px) {
+    .iconContainer {
+        position: absolute;
+        top: -20px;
+        cursor: pointer;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        background-blend-mode: multiply;
+        /* background-color: rgba(0, 0, 0, 0.4); */
+        border-radius: 10px 0 10px 0;
+        border: gold solid 2px;
+        box-shadow: -8px -8px 20px rgba(0, 0, 0, 0.3);
+        transition: transform 0.4s ease, box-shadow 0.4s ease;
+    }
+    #sopas-icon {
+        width: 15em;
+        height: 16em;
+    }
+
+    #segundos-icon {
+        width: 15em;
+        height: 15em;
+    }
+
+    #postres-icon {
+        width: 15em;
+        height: 16em;
+    }
+
+    #menu article h3 {
+        font-size: 5rem;
+    }
+}
+
+/* #menu article h3:hover {
+    box-shadow: -12px -12px 30px rgba(0, 0, 0, 0.4);
+} */
+
+/* seccion pedidos */
+#pedidos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 400px;
+    padding: 2rem;
+    color: #fff;
+    
+    background: radial-gradient(circle at center, rgba(0, 31, 63, 0.3) 0%, rgba(0, 31, 63, 0.6) 75%);
+    border-radius: 15px;
+    margin: 50px auto;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+#pedidos h2 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    color: #fff;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+#pedidos p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+#pedidos ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se adapten a la pantalla */
+    justify-content: center;
+    align-items: center;
+    gap: 30px; /* Espacio entre los logos */
+}
+
+#pedidos ul li {
+    transition: transform 0.3s ease-in-out;
+}
+
+#pedidos ul li:hover {
+    transform: translateY(-5px) scale(1.1);
+}
+
+#pedidos ul li img {
+    width: 100px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Estilos para dispositivos móviles (o anchos de pantalla pequeños) */
+@media (max-width: 768px) {
+    #menu article ul li {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    #menu article ul li .text-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    #menu article ul li h4 {
+        order: -1;
+        margin: 0 0 5px 0;
+    }
+    
+    #menu article ul li p {
+        order: 1;
+        margin: 0;
+    }
+}

@@ -1,0 +1,127 @@
+#sobreNosotros {
+    width: 60vw;
+    height: 100vh;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+    backdrop-filter: blur(2px) saturate(0%);
+    background-color: rgba(56, 10, 22, 0.7);
+    border-radius: 20px;
+
+}
+#sobreNosotros h2 {
+    font-family: "Zen Tokyo Zoo", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3rem;
+    text-align: center;
+    color: gold;
+}
+
+#sobreNosotros h3 {
+    font-family: "Cookie", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2rem;
+    text-align: left;
+    /* Ajuste para mover los subtítulos un poco a la izquierda del centro */
+    padding-left: 23%;
+}
+
+#sobreNosotros p, #sobre-nosotros ul {
+    text-align: left;
+    /* Alineación del contenido a la izquierda */
+    padding-left: 10px;
+}
+
+/* Media query para dispositivos móviles */
+@media (max-width: 768px) {
+    #sobreNosotros {
+        width: 90vw;
+        height: 110vh;
+        padding: 10px;
+    }
+
+    #sobreNosotros h3 {
+        text-align: left;
+        padding: 5%;
+    }
+}
+
+/* ---------Socios Seccion---------- */
+#socios {
+    padding: 0 2em;
+    padding-bottom: 2em;
+}
+
+#socios h2 {
+    text-align: center;
+}
+
+#socios .sociosContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+#socios .sociosContainer > div {
+    width: 48%;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#socios .sociosContainer > div img {
+    width: 100px;
+    height: 100px;
+    margin-right: 8rem;
+    margin-bottom: 2em;
+}
+
+#socios .sociosContainer > div h3 {
+    font-family: "Cookie", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2rem;
+    width: 100%;
+    text-align: left;
+    order: 2;
+    margin: 0;
+    color: gold;
+}
+
+#socios .sociosContainer > div ul {
+    list-style-type: disc;
+    margin: 0;
+    padding-left: 0;
+    flex-grow: 1;
+}
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+    #socios .sociosContainer > div {
+        width: 100%;
+        /* display: block; */
+    }
+
+    #socios .sociosContainer > div img {
+        margin-right: 3rem;
+        display: inline-block;
+        vertical-align: top;
+    }
+    /*
+    #socios .sociosContainer > div h3 {
+        text-align: left;
+        display: inline-block;
+        margin-left: 10px;
+        order: 0;
+    }
+
+    #socios .sociosContainer > div ul {
+        clear: both;
+        margin-top: 10px;
+        margin-left: 20px;
+    } */
+}

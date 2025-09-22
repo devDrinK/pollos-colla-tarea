@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pollos Colla</title>
+    <link rel="stylesheet" href="/estilos/menu.css">
+    <link rel="stylesheet" href="/estilos/informacion.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cookie&family=Zen+Tokyo+Zoo&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <a href="index.html">
+            <img src="/recursos/craiyon_logoletras.png" alt="Logo de tu Restaurante">
+        </a>
+
+        <div class="menu-toggle" id="mobile-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <ul class="nav-links">
+            <li>
+                <a href="index.html">Home</a>
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#historia">Historia</a></li>
+                    <li><a href="#comidas">Comidas</a></li>
+                    <li><a href="#pedidos">Pedidos</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="galeria.html">Galería</a>
+                <ul>
+                    <li><a href="#videos">Videos</a></li>
+                    <li><a href="#fotos">Fotos</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="resenias.html">Reseñas</a>
+            </li>
+            <li>
+                <a href="informacion.html">Información</a>
+                <ul>
+                    <li><a href="#sobre-nosotros">Sobre Nosotros</a></li>
+                    <li><a href="#socios">Socios</a></li>
+                </ul>
+            </li>
+        </ul>
+        <script>
+            const menuToggle = document.getElementById('mobile-menu');
+            const navLinks = document.querySelector('.nav-links');
+
+            menuToggle.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+            });
+        </script>
+    </nav>
+    
+    <section id="sobreNosotros">
+        <h2>Sobre Nosotros</h2>
+        <h3>Información</h3>
+        <p><strong>Ubicación:</strong> Avenida Simón Bolívar #123, La Paz, Bolivia.</p>
+        <p><strong>Horarios:</strong> Lunes a Domingo de 11:00 a 22:00.</p>
+        <p><strong>Registro Sanitario:</strong> RS-04-2025</p>
+
+        <h3>Contactos</h3>
+        <p><strong>Teléfono:</strong> +591 7777 8888</p>
+        <p><strong>Correo Electrónico:</strong> polloscolla@info.com</p>
+        
+        <h3>Redes Sociales</h3>
+        <a href="https://www.tiktok.com/@polloscolla" target="_blank">
+            <img src="/recursos/rrss/tiktoklogo.jpg" alt="TikTok" width="30">
+        </a>
+        <a href="https://www.youtube.com/@polloscolla" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/YouTube_full-color_icon_%282017%29.svg/64px-YouTube_full-color_icon_%282017%29.svg.png" alt="YouTube" width="30">
+        </a>
+        <a href="https://www.facebook.com/polloscolla" target="_blank">
+            <img src="/recursos/rrss/facelogo.jpg" alt="Facebook" width="30">
+        </a>
+        <a href="https://x.com/polloscolla" target="_blank">
+            <img src="/recursos/rrss/xlogo.jpg" alt="X (Twitter)" width="30">
+        </a>
+    </section>
+
+    <section id="socios">
+        <h2>Socios</h2>
+        <div class="sociosContainer">
+            <div>
+                <img src="/recursos/socios/1758508691594.jpg" alt="Logo de ProAgro" width="100">
+                <h3>ProAgro Bolivia</h3>
+                <ul>
+                    <li>Pollo entero y presas de pollo</li>
+                    <li>Huevos de granja</li>
+                </ul>
+            </div>
+
+            <div>
+                <img src="/recursos/socios/1758508691598.jpg" alt="Logo de Andes Grain" width="100">
+                <h3>Andes Grain</h3>
+                <ul>
+                    <li>Maíz morado</li>
+                    <li>Quinua real</li>
+                    <li>Trigo sarraceno</li>
+                </ul>
+            </div>
+            
+            <div>
+                <img src="/recursos/socios/1758508691602.jpg" alt="Logo de Huerta Feliz" width="100">
+                <h3>Huerta Feliz</h3>
+                <ul>
+                    <li>Verduras de hoja (lechuga, espinaca)</li>
+                    <li>Hortalizas (zanahoria, cebolla)</li>
+                    <li>Hierbas aromáticas (huacatay)</li>
+                </ul>
+            </div>
+
+            <div>
+                <img src="/recursos/socios/1758508691605.jpg" alt="Logo de Lácteos Aymara" width="100">
+                <h3>Lácteos Aymara</h3>
+                <ul>
+                    <li>Queso fresco</li>
+                    <li>Yogur natural</li>
+                    <li>Mantequilla de campo</li>
+                </ul>
+            </div>
+            
+            <div>
+                <img src="/recursos/socios/1758508691609.jpg" alt="Logo de Cacao Andino" width="100">
+                <h3>Cacao Andino</h3>
+                <ul>
+                    <li>Chocolate para postres</li>
+                    <li>Polvo de cacao</li>
+                    <li>Nibs de cacao</li>
+                </ul>
+            </div>
+            
+            <div>
+                <img src="/recursos/socios/1758508691612.jpg" alt="Logo de Papa Nativa" width="100">
+                <h3>Papa Nativa</h3>
+                <ul>
+                    <li>Papa waycha</li>
+                    <li>Papa Imilla</li>
+                    <li>Oca</li>
+                </ul>
+            </div>
+        </div>
+                
+    </section>
+
+    
+</body>
+</html>
