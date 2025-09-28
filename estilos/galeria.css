@@ -1,42 +1,68 @@
 
-#fotos {
-    
-    width: 100%;
-    padding: 0 3rem;
-    box-sizing: border-box;
-}
+    body 
+    {
+        background: linear-gradient(rgba(139, 106, 74, 0.233), black), url("https://i.pinimg.com/736x/7c/fb/ef/7cfbefbe12a210f60aae9005fca03c82.jpg");
+            background-size: cover;
+            background-position: center; 
+            background-repeat: no-repeat;
 
-#fotos .fotosContainer {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items:first baseline;
-    width: 100%;
-}
-
-#fotos .fotosContainer img {
-    max-width: 400px;
-    margin: 10px;
-    box-sizing: border-box;
-}
-
-h2 {
-    font-family: "Zen Tokyo Zoo", system-ui;
-    font-weight: 400;
-    font-style: normal;
-    text-align: center;
-    color: gold;
-}
-
-
-@media (max-width: 768px) {
-    #fotos {
-        padding: 0 1rem;
+      font-family: Arial, sans-serif; 
+      background-color:#fff8f0; 
+      margin:0; 
+      padding:0;
     }
-
-    #fotos .fotosContainer img {
-        width: 100%;
-        max-width: none;
-        margin: 5px 0;
+    /* header { 
+      background-color:#d32f2f; 
+      background: rgb(255, 252, 79);
+      color:rgb(151, 151, 151); 
+      text-align:center; 
+      padding:1rem; 
     }
-}
+    nav a { 
+      color: rgb(22, 22, 7); 
+      margin:0 10px; 
+      text-decoration:none; 
+      font-weight: bold;
+    } */
+     h1 {
+      font-family: "Cookie", cursive;
+      font-weight: 400;
+      font-style: normal;
+      text-align: center;
+      color: #220202;
+     }
+    .container { 
+      max-width: 1000px; 
+      margin:auto; 
+      padding:20px; 
+      text-align:center; 
+    }
+    .galeria { 
+      display: flex; 
+      flex-wrap: wrap; 
+      justify-content: center; 
+      gap: 20px; 
+    }
+    .galeria img, .galeria iframe { 
+      width: 300px; 
+      border-radius:10px; 
+      box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+      transition: transform 0.3s;
+    }
+    .galeria img:hover, .galeria iframe:hover {
+      transform: scale(1.05);
+    }
+    h2 { 
+      font-family: "Zen Tokyo Zoo", system-ui;
+      font-weight: 400;
+      font-style: normal;
+      color:gold; 
+      margin-top:40px; 
+    }
+    footer { 
+      text-align:center; 
+      background:#d32f2f; 
+      color:white; 
+      padding:10px; 
+      margin-top:20px; 
+    }

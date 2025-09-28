@@ -1,30 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pollos Colla</title>
+    <title>Reseñas - Pollería El Sabor</title>
     <link rel="stylesheet" href="estilos/menu.css">
+    <link rel="stylesheet" href="estilos/reseñas.css">
 </head>
 <body>
-    <nav>
-        <a href="index.html">
-            <img src="recursos/craiyon_logoletras.png" alt="Logo de tu Restaurante">
-        </a>
-
-        <div class="menu-toggle" id="mobile-menu">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-
+    <header>
+        <nav>
+      <a href="index.html">
+        <img src="/recursos/craiyon_logoletras.png" alt="Logo de tu Restaurante">
+      </a>
+      
+      <div class="menu-toggle" id="mobile-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      
         <ul class="nav-links">
             <li>
                 <a href="index.html">Home</a>
                 <ul>
-                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#hero">Inicio</a></li>
                     <li><a href="#historia">Historia</a></li>
-                    <li><a href="#comidas">Comidas</a></li>
+                    <li><a href="#menu">Comidas</a></li>
                     <li><a href="#pedidos">Pedidos</a></li>
                 </ul>
             </li>
@@ -55,6 +57,38 @@
             });
         </script>
     </nav>
-    
+    </header>
+
+    <div class="container">
+        <!-- Reseña general -->
+        <div class="general-review">
+            <h2>Calificación General del Restaurante</h2>
+            <p>Promedio: 4.8 / 5 basado en 350 reseñas</p>
+            <p class="stars">⭐⭐⭐⭐⭐</p>
+        </div>
+
+        <!-- Reseñas individuales -->
+        <div class="review">
+            <h3>María López</h3>
+            <p>El mejor pollo a la brasa que he probado, crujiente y jugoso. ¡Recomendado al 100%!</p>
+            <p class="stars">⭐⭐⭐⭐⭐</p>
+        </div>
+
+        <div class="review">
+            <h3>Carlos Pérez</h3>
+            <p>Muy buena atención, las papas estaban un poco frías pero el sabor del pollo excelente.</p>
+            <p class="stars">⭐⭐⭐⭐</p>
+        </div>
+
+        <div class="review">
+            <h3>Ana Torres</h3>
+            <p>Me encantó la salsa especial, le da un toque único al pollo. Volveré sin duda.</p>
+            <p class="stars">⭐⭐⭐⭐⭐</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2025 Pollería El Sabor | Diseñado por [Tu Nombre]</p>
+    </footer>
 </body>
 </html>

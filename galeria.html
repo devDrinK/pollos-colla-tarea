@@ -1,35 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pollos Colla</title>
-    <link rel="stylesheet" href="estilos/menu.css">
-    <link rel="stylesheet" href="estilos/galeria.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galería - Pollería El Sabor</title>
+  <link rel="stylesheet" href="estilos/menu.css">
+  <link rel="stylesheet" href="estilos/galeria.css">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cookie&family=Zen+Tokyo+Zoo&display=swap" rel="stylesheet">
 </head>
 <body>
+  <header>
     <nav>
-        <a href="index.html">
-            <img src="recursos/craiyon_logoletras.png" alt="Logo de tu Restaurante">
-        </a>
-
-        <div class="menu-toggle" id="mobile-menu">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-
+      <a href="index.html">
+        <img src="/recursos/craiyon_logoletras.png" alt="Logo de tu Restaurante">
+      </a>
+      
+      <div class="menu-toggle" id="mobile-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      
         <ul class="nav-links">
             <li>
                 <a href="index.html">Home</a>
                 <ul>
-                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#hero">Inicio</a></li>
                     <li><a href="#historia">Historia</a></li>
-                    <li><a href="#comidas">Comidas</a></li>
+                    <li><a href="#menu">Comidas</a></li>
                     <li><a href="#pedidos">Pedidos</a></li>
                 </ul>
             </li>
@@ -60,21 +61,25 @@
             });
         </script>
     </nav>
-    <section id="fotos">
-        <h2>FOTOS</h2>
-        <div class="fotosContainer">
-            <img src="recursos/galeria/resturante1.webp" alt="" loading="lazy">
-            <img src="recursos/galeria/restaurantelargo1.jpeg" alt="" loading="lazy">
-            <img src="recursos/galeria/resturante1.webp" alt="" loading="lazy">
-            <img src="recursos/galeria/resturante1.webp" alt="" loading="lazy">
-            <img src="recursos/galeria/resturante1.webp" alt="" loading="lazy">
-            <img src="recursos/galeria/restaurantelargo1.jpeg" alt="" loading="lazy">
-        </div>
-        
-    </section>
-    <section id="videos">
-        <h2>VIDEOS</h2>
-        
-    </section>
+  </header>
+      <h1>Galería de la Pollería El Sabor</h1>
+
+  <div class="container">
+    <h2>Fotos</h2>
+    <div class="galeria">
+      <img src="https://www.infobae.com/resizer/v2/57EWT3P37ZH2VP63JSSVNVNE4I.jpg?auth=29319b97acfee5dcf08b808c83bc974538a62cd127fa9d50bbc4197e4c1816c7&smart=true&width=992&height=661&quality=85" alt="Pollo a la brasa">
+      <img src="https://elcomercio.pe/resizer/v2/GJB7ZYMR4FB3LO5U35WQAUBGDI.png?auth=bce9c09d5b2c5d96dc748e9cd549cf0d4c486d513e86e15dc813f3d53d344b8f&width=640&quality=75&smart=true" alt="Interior del restaurante">
+    </div>
+
+    <h2>Videos</h2>
+    <div class="galeria">
+      <iframe width="300" height="200" src="https://www.youtube.com/embed/dZ8NHX5aVD0" frameborder="0" allowfullscreen></iframe>
+      <iframe width="300" height="200" src="https://www.youtube.com/embed/YXMsoiVJLxA" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </div>
+
+  <footer>
+    © 2025 Pollería El Sabor
+  </footer>
 </body>
 </html>
