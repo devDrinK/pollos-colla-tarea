@@ -45,7 +45,7 @@ nav ul a {
 
 /* -------------------- Lógica para los submenús ocultos -------------------- */
 
-nav ul ul {
+nav ul .subIndex, .subGaleria {
     position: absolute;
     top: 100%;
     left: 0;
@@ -56,6 +56,25 @@ nav ul ul {
     box-shadow: 0px 8px 16px rgba(0,0,0,0.1);
     z-index: 1000;
     width: max-content;
+    max-width: 90vw;
+    overflow-wrap: break-word;
+    word-break: break-word;
+}
+
+nav ul .subInfo {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    display: none;
+    flex-direction: row;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.1);
+    z-index: 1000;
+    width: max-content;
+    max-width: 90vw;
+    overflow-wrap: break-word;
+    word-break: break-word;
 }
 
 nav ul li:hover > ul {
@@ -94,6 +113,7 @@ nav ul ul li {
 
     nav ul ul {
         flex-direction: column;
+        left: 0;
     }
     .menu-toggle {
         display: flex;
@@ -127,4 +147,33 @@ nav ul ul li {
         border: none;
     }
 
+    nav ul .subIndex,
+    nav ul .subGaleria,
+    nav ul .subInfo {
+        position: static;
+        display: none;
+        flex-direction: column;
+        width: 100vw;
+        max-width: 100%;
+        box-shadow: none;
+        background-color: #fff;
+        border: 1px solid #ddd;
+    }
+
+    nav ul li:hover > .subIndex,
+    nav ul li:hover > .subGaleria,
+    nav ul li:hover > .subInfo {
+        display: flex;
+    }
+
+    /* nav ul ul li {
+        width: 100%;
+    }
+
+    nav ul ul li a {
+        width: 100%;
+        text-align: center;
+    } */
+
+    
 }

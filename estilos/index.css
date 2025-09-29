@@ -131,35 +131,69 @@ main {
     padding-top: 12rem;
 } */
 
+/* --- Estilos del Contenedor Principal --- */
 #menu {
     position: relative;
-    background: url(/recursos/menufondo/1758509783663.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: top;
+    background: none; 
+    background-repeat: initial; 
+    background-size: initial;
+    background-position: initial; 
     border-radius: 15px;
     padding: 20px;
     margin: 40px auto;
     width: 50vw;
     max-width: 800px;
     color: white;
-    padding-top: 12rem;
+    padding-top: 15rem;
+    min-height: 100vh; 
 }
 
-/* Agregar una capa de color encima de la imagen */
+/* --- Fondo de Encabezado (Cabeza Estática) --- */
 #menu::before {
     content: "";
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
+    height: 20rem;
+    background: url(/recursos/menufondo/menuHead.jpg) no-repeat top center;
+    background-size: 100% auto;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    z-index: 0; 
+}
+
+
+/* --- Fondo de Cuerpo (Cuerpo Repetible y Desplegable) --- */
+#menu::after {
+    content: "";
+    position: absolute;
+    top: 10rem; /* Debe coincidir con la altura del fondo del encabezado */
+    left: 0;
+    right: 0;
     bottom: 0;
-    background-color: rgba(2, 45, 88, 0.2);
+    margin-top: 160px;
+    background: url(/recursos/menufondo/menuBody.jpg) repeat-y;
+    background-size: contain; 
+    z-index: 0;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+/* --- Capa de Color (Opacity Overlay) --- */
+#menu > *::before { /* He reutilizado el pseudo-elemento original para el overlay, ajustando el selector */
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(88, 68, 2, 0.342);
     border-radius: 15px;
     z-index: 1;
 }
 
-/* Asegurar que el contenido esté por encima del pseudo-elemento */
+/* --- Asegurar que el contenido esté por encima --- */
 #menu > * {
     position: relative;
     z-index: 2;
@@ -217,6 +251,7 @@ main {
     padding-bottom: 20px;
     border-bottom: 2px solid gold;
 }
+/* --- Estilos para el nuevo contenedor de información (agrupa UL y P) --- */
 
 #menu article ul li:last-child {
     border-bottom: none;
@@ -230,24 +265,52 @@ main {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+/* --- Estilos para las listas de ingredientes --- */
+/* #menu article ul li > ul {
+    display: block !important; 
+    list-style: disc;
+    padding: 0 0 0 20px;
+    margin: 10px 0 0 0;
+    flex-direction: initial; 
+    gap: initial;
+    background-color: transparent; 
+} */
+
+/* #menu article ul li > ul li {
+    display: list-item; 
+    align-items: initial;
+    gap: initial;
+    border-bottom: none; 
+    padding: 2px 0; 
+    font-size: 0.9em;
+    color: #555;
+}
+
+#menu article ul li > ul li:last-child {
+    border-bottom: none;
+} */
+
 /* Contenedor del texto (h4 y p) */
-#menu article ul li .text-container {
+/* #menu article ul li .text-container {
     display: flex;
     flex-direction: column;
-}
+} */
 
 /* Título del plato */
 #menu article ul li h4 {
+    font-family: "Zen Tokyo Zoo", system-ui;
+    font-weight: 400;
+    font-style: normal;
     margin: 0;
-    font-size: 1.4em;
-    color: #141d02;
+    font-size: 1.8em;
+    color: #bedb8b;
 }
 
 /* Descripción del plato */
 #menu article ul li p {
     margin: 5px 0 0;
-    font-size: 1em;
-    color: #000000;
+    font-size: 1.3em;
+    color: #f0e8e8;
 }
 
 /* Opcional: Estilo para la lista desplegada (activada con JS) */
@@ -255,8 +318,21 @@ main {
     display: flex;
 }
 
+#menu article ul li .info-container{
+    display: flex;
+    flex-direction: column;
+    color: #bedb8b;
+}
+/* #menu article .info-container ol{
+    list-style:disc;
+} */
+
+#menu article ol li {
+    border-bottom: 0;
+}
+
 #menu article {
-    background-color: rgba(255, 247, 250, 0.692);
+    background-color: rgba(41, 17, 25, 0.692);
     color: #333;
     cursor: pointer;
     padding: 50px 30px;
@@ -357,6 +433,14 @@ main {
     position: relative;
 } */
 @media (max-width: 768px) {
+    #menu::before {
+        background: url(/recursos/menufondo/menuHead.jpg) no-repeat right center;
+
+    }
+    #menu::after {
+        margin-top: 90px;
+    }
+
     .iconContainer {
         position: absolute;
         top: -20px;
@@ -474,4 +558,12 @@ main {
         order: 1;
         margin: 0;
     }
+}
+
+footer { 
+      text-align:center; 
+      background:#d32f2f; 
+      color:white; 
+      padding:10px; 
+      /* margin-top:20px;  */
 }

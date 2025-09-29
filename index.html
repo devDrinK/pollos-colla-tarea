@@ -27,7 +27,7 @@
         <ul class="nav-links">
             <li>
                 <a href="index.html">Home</a>
-                <ul>
+                <ul class="subIndex">
                     <li><a href="#hero">Inicio</a></li>
                     <li><a href="#historia">Historia</a></li>
                     <li><a href="#menu">Comidas</a></li>
@@ -36,7 +36,7 @@
             </li>
             <li>
                 <a href="galeria.html">Galería</a>
-                <ul>
+                <ul class="subGaleria">
                     <li><a href="#videos">Videos</a></li>
                     <li><a href="#fotos">Fotos</a></li>
                 </ul>
@@ -46,7 +46,7 @@
             </li>
             <li>
                 <a href="informacion.html">Información</a>
-                <ul>
+                <ul class="subInfo">
                     <li><a href="#sobre-nosotros">Sobre Nosotros</a></li>
                     <li><a href="#socios">Socios</a></li>
                 </ul>
@@ -82,137 +82,348 @@ Lo que empezó como una pequeña parrilla se transformó en un restaurante icón
 
     <main>
         <section id="menu">
-            <!-- <h2>Nuestro Menú</h2> -->
-                        
-            <article id="sopas">
-                <div class="iconContainer" id="sopas-icon"></div>
-                <h3>Sopas</h3>
-                <ul>
-                    <li>
-                        <div>
-                            <h4>Sopa de Tomate Asado</h4>
-                            <img src="/recursos/tomatosoup.jpg" alt="Sopa de Tomate Asado">
-                        </div>
+        
+        <article id="sopas">
+            <div class="iconContainer" id="sopas-icon"></div>
+            <h3>Sopas</h3>
+            <ul>
+                <li>
+                    <div>
+                        <h4>Sopa de Tomate Asado</h4>
+                        <img src="recursos/sopas/tomatosoup.jpg" alt="Sopa de Tomate Asado">
+                    </div>
+                    <div class="info-container">
+                        <ol>
+                            <li>Tomates asados</li>
+                            <li>Albahaca fresca</li>
+                            <li>Caldo de verduras</li>
+                            <li>Crema de leche (opcional)</li>
+                        </ol>
                         <p>Deliciosa sopa de tomate con albahaca y un toque de crema.</p>
-                    </li>
-                    <li>
-                        <div>
-                            <h4>Crema de Champiñones</h4>
-                            <img src="/recursos/champinon.jpg" alt="Crema de Champiñones">
-                        </div>
+                    </div>
+                </li>
+                
+                <li>
+                    <div>
+                        <h4>Crema de Champiñones</h4>
+                        <img src="recursos/sopas/champinon.jpg" alt="Crema de Champiñones">
+                    </div>
+                    <div class="info-container">
+                        <ol>
+                            <li>Champiñones frescos</li>
+                            <li>Cebolla y ajo</li>
+                            <li>Mantequilla y harina (roux)</li>
+                            <li>Crema de leche</li>
+                        </ol>
                         <p>Clásica crema de champiñones con un aroma irresistible.</p>
-                    </li>
-                    <li>
-                        <div>
-                            <h4>Sopa de Lentejas</h4>
-                            <img src="sopa-lentejas.jpg" alt="Sopa de Lentejas">
-                        </div>
+                    </div>
+                </li>
+                
+                <li>
+                    <div>
+                        <h4>Sopa de Lentejas</h4>
+                        <img src="recursos/sopas/sopalentejas.jpg" alt="Sopa de Lentejas">
+                    </div>
+                    <div class="info-container">
+                        <ol>
+                            <li>Lentejas</li>
+                            <li>Zanahoria, papa y apio</li>
+                            <li>Panceta o chorizo (opcional)</li>
+                            <li>Caldo de pollo o verduras</li>
+                        </ol>
                         <p>Sopa de lentejas sustanciosa con verduras de temporada.</p>
-                    </li>
-                    <li>
-                        <div>
-                            <h4>Caldo de Pollo con Fideos</h4>
-                            <img src="caldo-pollo.jpg" alt="Caldo de Pollo con Fideos">
-                        </div>
+                    </div>
+                </li>
+                
+                <li>
+                    <div>
+                        <h4>Caldo de Pollo con Fideos</h4>
+                        <img src="recursos/sopas/sopas.jpg" alt="Caldo de Pollo con Fideos">
+                    </div>
+                    <div class="info-container">
+                        <ol>
+                            <li>Pollo desmenuzado</li>
+                            <li>Fideos finos</li>
+                            <li>Zanahoria y apio</li>
+                            <li>Caldo de pollo concentrado</li>
+                        </ol>
                         <p>Reconfortante caldo de pollo casero con trozos de pollo y fideos.</p>
-                    </li>
-                </ul>
-            </article>
+                    </div>
+                </li>
+            </ul>
+        </article>
 
-            <article id="segundos">
-                <div class="iconContainer" id="segundos-icon"></div>
-                <h3>Segundos</h3>
-                <ul>
-                    <li>
+    ---
+        
+        <article id="segundos">
+            <div class="iconContainer" id="segundos-icon"></div>
+            <h3>Segundos</h3>
+            <ul>
+                <li>
+                    <div>
                         <h4>Pollo a la Parrilla</h4>
-                        <img src="pollo-parrilla.jpg" alt="Pollo a la Parrilla">
+                        <img src="recursos/segundos/pollohorno.jpg" alt="Pollo a la Parrilla">
+                    </div>
+                    <div class="info-container">
+                        <ol>
+                            <li>Pechuga de pollo</li>
+                            <li>Aceite de oliva</li>
+                            <li>Hierbas frescas (romero, tomillo)</li>
+                            <li>Limón</li>
+                        </ol>
                         <p>Jugoso pollo marinado, asado a la perfección con hierbas frescas.</p>
-                    </li>
-                    <li>
+                    </div>
+                </li>
+                
+                <li>
+                    <div>
                         <h4>Salmón al Horno</h4>
-                        <img src="salmon-horno.jpg" alt="Salmón al Horno">
+                        <img src="recursos/segundos/salmonhorno.jpg" alt="Salmón al Horno">
+                    </div>
+                    <div class="info-container">
+                        <ol>
+                            <li>Filete de salmón fresco</li>
+                            <li>Espárragos</li>
+                            <li>Rodajas de limón</li>
+                            <li>Eneldo</li>
+                        </ol>
                         <p>Filete de salmón fresco horneado con espárragos y limón.</p>
-                    </li>
-                    <li>
+                    </div>
+                </li>
+                
+                <li>
+                    <div>
                         <h4>Costillas de Cerdo BBQ</h4>
-                        <img src="costillas-bbq.jpg" alt="Costillas de Cerdo BBQ">
+                        <img src="recursos/segundos/costillas.jpg" alt="Costillas de Cerdo BBQ">
+                    </div>
+                    <div class="info-container">
+                        <ol>
+                            <li>Costillas de cerdo</li>
+                            <li>Salsa BBQ casera (tomate, vinagre, azúcar morena)</li>
+                            <li>Mostaza</li>
+                            <li>Pimienta negra</li>
+                        </ol>
                         <p>Costillas de cerdo lentamente cocinadas con salsa BBQ casera.</p>
-                    </li>
-                    <li>
+                    </div>
+                </li>
+                
+                <li>
+                    <div>
                         <h4>Lomo Saltado</h4>
-                        <img src="lomo-saltado.jpg" alt="Lomo Saltado">
+                        <img src="recursos/segundos/lomosaltado.jpg" alt="Lomo Saltado">
+                    </div>
+                    <div class="info-container">
+                        <ol>
+                            <li>Lomo de res en tiras</li>
+                            <li>Cebolla roja y tomate</li>
+                            <li>Ají amarillo</li>
+                            <li>Salsa de soya y vinagre</li>
+                        </ol>
                         <p>Clásico plato peruano de lomo de res salteado con cebolla y tomate.</p>
-                    </li>
-                    <li>
+                    </div>
+                </li>
+                
+                <li>
+                    <div>
                         <h4>Pasta Carbonara</h4>
-                        <img src="pasta-carbonara.jpg" alt="Pasta Carbonara">
+                        <img src="recursos/segundos/pastacarbonara.jpg" alt="Pasta Carbonara">
+                    </div>
+                    <div class="info-container">
+                        <ol>
+                            <li>Pasta larga (ej. Spaghetti)</li>
+                            <li>Huevo y queso Parmesano/Pecorino</li>
+                            <li>Panceta (Guanciale tradicionalmente)</li>
+                            <li>Pimienta negra recién molida</li>
+                        </ol>
                         <p>Pasta cremosa con huevo, panceta crujiente y queso parmesano.</p>
-                    </li>
-                    <li>
+                    </div>
+                </li>
+                
+                <li>
+                    <div>
                         <h4>Tacos de Carne Asada</h4>
-                        <img src="tacos-carne.jpg" alt="Tacos de Carne Asada">
+                        <img src="recursos/segundos/tacos.jpg" alt="Tacos de Carne Asada">
+                    </div>
+                    <div class="info-container">
+                        <ol>
+                            <li>Tortilla de maíz</li>
+                            <li>Carne asada marinada</li>
+                            <li>Cebolla blanca y cilantro</li>
+                            <li>Salsa picante (al gusto)</li>
+                        </ol>
                         <p>Tres tacos de tortilla de maíz con carne asada, cebolla y cilantro.</p>
-                    </li>
-                    <li>
+                    </div>
+                </li>
+                
+                <li>
+                    <div>
                         <h4>Risotto de Champiñones</h4>
-                        <img src="risotto-champinones.jpg" alt="Risotto de Champiñones">
+                        <img src="recursos/segundos/risotochampinon.jpg" alt="Risotto de Champiñones">
+                    </div>
+                    <div class="info-container">
+                        <ol>
+                            <li>Arroz Arborio o Carnaroli</li>
+                            <li>Hongos silvestres</li>
+                            <li>Vino blanco</li>
+                            <li>Caldo y queso Parmesano</li>
+                        </ol>
                         <p>Risotto cremoso preparado con una selección de hongos silvestres.</p>
-                    </li>
-                    <li>
+                    </div>
+                </li>
+                
+                <li>
+                    <div>
                         <h4>Hamburguesa Clásica</h4>
-                        <img src="hamburguesa-clasica.jpg" alt="Hamburguesa Clásica">
+                        <img src="recursos/segundos/hamburguesa.jpg" alt="Hamburguesa Clásica">
+                    </div>
+                    <div class="info-container">
+                        <ol>
+                            <li>Carne de res (patty)</li>
+                            <li>Pan de hamburguesa</li>
+                            <li>Lechuga, tomate, cebolla</li>
+                            <li>Queso Cheddar</li>
+                        </ol>
                         <p>Hamburguesa de carne, lechuga, tomate y queso, servida con papas fritas.</p>
-                    </li>
-                </ul>
-            </article>
+                    </div>
+                </li>
+            </ul>
+        </article>
 
-            <article id="postres">
-                <div class="iconContainer" id="postres-icon"></div>
-                <h3>Postres</h3>
-                <ul>
-                    <li>
+
+        <article id="postres">
+            <div class="iconContainer" id="postres-icon"></div>
+            <h3>Postres</h3>
+            <ul>
+                <li>
+                    <div>
                         <h4>Tarta de Manzana</h4>
-                        <img src="tarta-manzana.jpg" alt="Tarta de Manzana">
+                        <img src="recursos/postres/tarta.jpg" alt="Tarta de Manzana">
+                    </div>
+                    <div class="info-container">
+                        <ol>
+                            <li>Manzanas (Granny Smith o similar)</li>
+                            <li>Masa de hojaldre o quebrada</li>
+                            <li>Canela y nuez moscada</li>
+                            <li>Azúcar morena</li>
+                        </ol>
                         <p>Tarta casera con manzanas caramelizadas y una capa crujiente.</p>
-                    </li>
-                    <li>
+                    </div>
+                </li>
+                
+                <li>
+                    <div>
                         <h4>Mousse de Chocolate</h4>
-                        <img src="mousse-chocolate.jpg" alt="Mousse de Chocolate">
+                        <img src="recursos/postres/mousse.jpg" alt="Mousse de Chocolate">
+                    </div>
+                    <div class="info-container">
+                        <ol>
+                            <li>Chocolate amargo (alto porcentaje de cacao)</li>
+                            <li>Huevos</li>
+                            <li>Mantequilla</li>
+                            <li>Crema de leche batida</li>
+                        </ol>
                         <p>Ligero y cremoso mousse de chocolate amargo, perfecto para los amantes del cacao.</p>
-                    </li>
-                    <li>
+                    </div>
+                </li>
+                
+                <li>
+                    <div>
                         <h4>Cheesecake de Frutos Rojos</h4>
-                        <img src="cheesecake-frutos-rojos.jpg" alt="Cheesecake de Frutos Rojos">
+                        <img src="recursos/postres/cheescake.jpg" alt="Cheesecake de Frutos Rojos">
+                    </div>
+                    <div class="info-container">
+                        <ol>
+                            <li>Queso crema</li>
+                            <li>Base de galleta (Graham o similar)</li>
+                            <li>Mermelada o Coulis de frutos rojos</li>
+                            <li>Azúcar y vainilla</li>
+                        </ol>
                         <p>Cheesecake suave con coulis de frutos rojos.</p>
-                    </li>
-                    <li>
+                    </div>
+                </li>
+                
+                <li>
+                    <div>
                         <h4>Tiramisú</h4>
-                        <img src="tiramisu.jpg" alt="Tiramisú">
+                        <img src="recursos/postres/tiramisu.jpg" alt="Tiramisú">
+                    </div>
+                    <div class="info-container">
+                        <ol>
+                            <li>Queso Mascarpone</li>
+                            <li>Bizcochos de soletilla</li>
+                            <li>Café fuerte</li>
+                            <li>Cacao en polvo y licor (ej. Marsala, ron)</li>
+                        </ol>
                         <p>Clásico postre italiano con capas de bizcochos de soletilla, café y mascarpone.</p>
-                    </li>
-                    <li>
+                    </div>
+                </li>
+                
+                <li>
+                    <div>
                         <h4>Helado de Vainilla</h4>
-                        <img src="helado-vainilla.jpg" alt="Helado de Vainilla">
+                        <img src="recursos/postres/helado.jpg" alt="Helado de Vainilla">
+                    </div>
+                    <div class="info-container">
+                        <ol>
+                            <li>Crema de leche</li>
+                            <li>Vainas de vainilla natural o extracto</li>
+                            <li>Azúcar</li>
+                            <li>Yemas de huevo (opcional)</li>
+                        </ol>
                         <p>Helado cremoso de vainilla, ideal para acompañar otros postres o solo.</p>
-                    </li>
-                    <li>
+                    </div>
+                </li>
+                
+                <li>
+                    <div>
                         <h4>Brownie con Nuez</h4>
-                        <img src="brownie.jpg" alt="Brownie con Nuez">
+                        <img src="recursos/postres/brownie.jpg" alt="Brownie con Nuez">
+                    </div>
+                    <div class="info-container">
+                        <ol>
+                            <li>Chocolate negro</li>
+                            <li>Nueces picadas</li>
+                            <li>Mantequilla y azúcar</li>
+                            <li>Huevos y harina</li>
+                        </ol>
                         <p>Brownie de chocolate caliente con trozos de nuez y un centro suave.</p>
-                    </li>
-                    <li>
+                    </div>
+                </li>
+                
+                <li>
+                    <div>
                         <h4>Panna Cotta de Vainilla</h4>
-                        <img src="panna-cotta.jpg" alt="Panna Cotta de Vainilla">
+                        <img src="recursos/postres/panna.jpg" alt="Panna Cotta de Vainilla">
+                    </div>
+                    <div class="info-container">
+                        <ol>
+                            <li>Crema de leche</li>
+                            <li>Azúcar y vainilla</li>
+                            <li>Gelatina sin sabor</li>
+                            <li>Caramelo líquido (para decorar)</li>
+                        </ol>
                         <p>Postre italiano sedoso, con sabor a vainilla y un toque de caramelo.</p>
-                    </li>
-                    <li>
+                    </div>
+                </li>
+                
+                <li>
+                    <div>
                         <h4>Crepas de Dulce de Leche</h4>
-                        <img src="crepas-dulce-leche.jpg" alt="Crepas de Dulce de Leche">
+                        <img src="recursos/postres/crepas.jpg" alt="Crepas de Dulce de Leche">
+                    </div>
+                    <div class="info-container">
+                        <ol>
+                            <li>Harina, leche, huevo (para la crepa)</li>
+                            <li>Mantequilla</li>
+                            <li>Dulce de leche</li>
+                            <li>Azúcar glass (para espolvorear)</li>
+                        </ol>
                         <p>Finas crepas rellenas de dulce de leche, perfectas para un final dulce.</p>
-                    </li>
-                </ul>
-            </article>
-        </section>
+                    </div>
+                </li>
+            </ul>
+        </article>
+    </section>
         
         <section id="pedidos">
             <h2>Haz tu Pedido</h2>
@@ -225,6 +436,9 @@ Lo que empezó como una pequeña parrilla se transformó en un restaurante icón
             </ul>
         </section>
     </main>
+    <footer>
+    © 2025 Pollería El Sabor
+  </footer>
     <script src="/componentes/index.js"></script>
 </body>
 </html>
